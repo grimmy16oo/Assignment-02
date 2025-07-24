@@ -69,6 +69,7 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin-bottom: 210px;
 }
 .our-plants-section h1{
     font-size: 3rem;
@@ -104,13 +105,40 @@
     width: 100%;
     padding: 20px;
 }
-.out-plants-grid{
+.our-plants-grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 20px;
     row-gap: 30px;
 }
 
+
+/* flower lover section */
+.plants-lover-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 130px;
+}
+.plants-lover-image img{
+    max-width: 100%;
+}
+.plants-lover-content{
+    max-width: 540px;
+}
+.plants-lover-content h1{
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+.plants-lover-content ul{
+    margin-left: 20px;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.plants-lover-content li{
+    padding: 10px;
+}
 
 
 
@@ -147,7 +175,10 @@
         max-width: 100%;
     }
 
-    .out-plants-grid{
+    .our-plants-section{
+        margin-bottom: 40px;
+    }
+    .our-plants-grid{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
@@ -159,6 +190,15 @@
         font-size: 0.8rem;
     }
 
-    
-    
+    .plants-lover-section{
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 140px;
+    }
+    .plants-lover-content h1{
+        font-size: 1.5rem;
+    }
+    .plants-lover-content ul{
+        font-size: .85rem;
+    }
 }
