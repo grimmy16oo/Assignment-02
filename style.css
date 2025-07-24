@@ -220,8 +220,8 @@ img{
     padding: 10px;
     font-weight: bold;
 }
-.container h4{
-    text-decoration: underline;
+.container a{
+    color: white;
     font-weight: 600;
 }
 .third h3{
@@ -229,8 +229,9 @@ img{
     padding: 10px;
     font-weight: bold;
 }
-.third h4{
+.third a{
     font-size: 1.7rem;
+    color: white;
     font-weight: 600;
 }
 
@@ -273,6 +274,39 @@ img{
     padding: 15px 50px;
     font-weight: 600;
 }
+
+
+/* footer section */
+.footer-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 50px 0;
+    column-gap: 100px;
+}
+.child p{
+    
+    padding: 10px 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+.child ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+.child ul a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);;
+}
+.child-img{
+    display: flex;
+    gap: 15px;
+}
+.child-img img{
+    width: 36px;
+    height: 36px;
+}
+
 
 
 /* responsiveness */
@@ -359,7 +393,7 @@ img{
         padding: 10px;
         font-weight: bold;
     }
-    .third h4{
+    .third a{
         font-size: 1rem;
         font-weight: 600;
     }
@@ -375,6 +409,12 @@ img{
     }
     .search-container button{
         padding: 5px;
+    }
+
+    .footer-section{
+        grid-template-columns: repeat(1,1fr);
+        padding: 30px 10px;
+        gap: 20px;
     }
     
 
