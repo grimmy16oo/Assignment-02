@@ -16,9 +16,9 @@
 .color-orange{
     color: #E95A08;
 }
-/* .img{
-    width: 100%;
-} */
+img{
+    max-width: 100%;
+}
 
 /* nav section */
 .nav-bar{
@@ -53,11 +53,14 @@
     align-items: center;
     margin-bottom: 120px;
 }
+.hero-content{
+    max-width: 570px;
+}
 .hero-content h1{
     font-size: 4rem;
 }
 .hero-content p{
-    font-size: 1.4;
+    font-size: 1.3rem;
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -78,7 +81,7 @@
 .our-plants-section p{
     max-width: 700px;
     text-align: center;
-    font-size: 1.4;
+    font-size: 1.3rem;
     color: rgba(0, 0, 0, 0.5);
 }
 .card{
@@ -157,6 +160,79 @@
     animation: badge-animation 4s linear 0s infinite;
 }
 
+/* latest deal section */
+.latest-deal-section{
+    margin-bottom: 100px;
+}
+.latest-deal-section h1{
+    font-size: 3.1rem;
+    text-align: center;
+    padding: 16px;
+}
+.latest-deal-section p{
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 10px 160px;
+    margin-bottom: 120px;
+}
+.latest-deal-grid{
+    display: grid;
+    grid-template-areas: "a c c"
+                        "b c c";
+    row-gap: 25px;
+    column-gap: 20px;
+}
+.area-a{
+    grid-area: a;
+}
+.area-b{
+    grid-area: b;
+}
+.area-c{
+    grid-area: c;
+}
+.box{
+    position: relative;
+    background-color: black;
+    border-radius: 14px;
+}
+.box img{
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    opacity: 0.6;
+    border-radius: 14px;
+}
+.container{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.container h3{
+    font-size: 1.4rem;
+    padding: 10px;
+    font-weight: bold;
+}
+.container h4{
+    text-decoration: underline;
+    font-weight: 600;
+}
+.third h3{
+    font-size: 2.5rem;
+    padding: 10px;
+    font-weight: bold;
+}
+.third h4{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
 
 
 
@@ -221,4 +297,29 @@
     .badge{
         display: none;
     }
+
+    .latest-deal-section h1{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .latest-deal-section p{
+        font-size: .85rem;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .latest-deal-grid{
+        grid-template-areas: "a"
+                            "b"
+                            "c";
+    }
+    .third h3{
+        font-size: 1.4rem;
+        padding: 10px;
+        font-weight: bold;
+    }
+    .third h4{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
 }
