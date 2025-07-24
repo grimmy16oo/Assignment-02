@@ -124,6 +124,9 @@
 .plants-lover-image img{
     max-width: 100%;
 }
+.plants-lover-image{
+    position: relative;
+}
 .plants-lover-content{
     max-width: 540px;
 }
@@ -138,6 +141,20 @@
 }
 .plants-lover-content li{
     padding: 10px;
+}
+@keyframes badge-animation {
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.badge{
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: -120px;
+    left: 370px;
+    animation: badge-animation 4s linear 0s infinite;
 }
 
 
@@ -200,5 +217,8 @@
     }
     .plants-lover-content ul{
         font-size: .85rem;
+    }
+    .badge{
+        display: none;
     }
 }
